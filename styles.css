@@ -5,6 +5,7 @@ html, body{
 
 body{
     font-family: sans-serif;
+    background-color: #f4f4f4;
 }
 
 /*Responsive*/
@@ -12,7 +13,6 @@ body{
 @media only screen and (min-width: 1025px){
     .titulo{
         margin-top: 10vh;
-
         font-size: 1vw;
     }
 
@@ -30,20 +30,26 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: #fff;
 
         width: 40%;
         height: auto;
 
-        border: 2px solid black;
+        border: 1px solid #ddd;
         border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
         margin-top: 5vh;
     }
 
     .info{
+        display: flex;
+        width: 70%;
+        justify-content: left;
         padding-top: 5%;
         padding-bottom: 5%;
-        font-size: 3vw;
+        font-size: 1vw;
+        color: #3498db;
     }
 
     .vp, .interes, .periodo{
@@ -105,19 +111,26 @@ body{
         align-items: center;
         justify-content: center;
 
+        background-color: #fff;
+
         width: 70%;
         height: auto;
 
-        border: 2px solid black;
+        border: 1px solid #ddd;
         border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
         margin-top: 5vh;
     }
 
     .info{
+        display: flex;
+        width: 60%;
+        justify-content: left;
         padding-top: 5%;
         padding-bottom: 5%;
-        font-size: 3vw;
+        font-size: 2vw;
+        color: #3498db; 
     }
 
     .vp, .interes, .periodo{
@@ -126,7 +139,6 @@ body{
 
         width: 60%;
 
-        /*font-size: 15px;*/
         font-size: 2vw;
         margin-bottom: 5%;
     }
@@ -179,20 +191,25 @@ body{
         flex-direction: column;
         justify-content: center;
 
+        background-color: #fff;
+
         width: 80%;
         height: auto;
 
-        border: 2px solid black;
+        border: 1px solid #ddd;
         border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
         margin-top: 5vh;
     }
 
     .info{
+        display: flex;
+        justify-content: left;
         padding-top: 5%;
         padding-bottom: 5%;
-        
-        font-size: 5vw;
+        font-size: 3vw;
+        color: #3498db;
     }
 
     .vp, .interes, .periodo{
