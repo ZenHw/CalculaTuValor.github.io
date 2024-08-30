@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor futuro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="titulo">
+            <h1>Valor futuro dado valor presente</h1>
+        </div>
+
+        <div class="form">
+            <div class="info">
+                <label>Ingrese los datos</label>
+            </div>
+
+            <div class="vp">
+                <label for="vp">Valor presente</label>
+                <input type="text" id="vp">
+            </div>
+
+            <div class="interes">
+                <label for="interes">Interes (%)</label>
+                <input type="text" id="interes">
+            </div>
+
+            <div class="periodo">
+                <label for="periodo">Periodo</label>
+                <input type="text" id="periodo">
+            </div>
+
+            <div class="btn">
+                <input type="button" value="Calcular" onclick="calcular()">
+            </div>
+        </div>
+
+        <div id="resultado">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
