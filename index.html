@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valor futuro</title>
+    <meta name="description" content="Calculadora para determinar el valor futuro de una inversión considerando un aporte periódico mensual, una inversión inicial, una tasa de interés anual y el período de tiempo. Obtén resultados precisos y fáciles de interpretar.">
+    <meta name="keywords" content="calculadora, valor futuro, inversión inicial, aporte mensual, interés anual, finanzas, cálculo de inversión">
+    <meta name="author" content="Calcula tu valor">
+    <title>Calculadora de Valor Futuro - Estima el Valor Futuro de tu Inversión</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <div class="main">
         <div class="titulo">
-            <h1>Valor futuro dado valor presente</h1>
+            <h1>Calculadora de interes compuesto</h1>
         </div>
 
         <div class="form">
             <div class="info">
-                <label>Ingrese los datos</label>
+                <h2>Ingrese los datos</h2>
             </div>
 
             <div class="vp">
-                <label for="vp">Valor presente</label>
+                <label for="vp">Monto inicial</label>
                 <input type="text" id="vp">
             </div>
 
+            <div class="anualidad">
+                <label for="anualidad">Aporte periodico (mensual)</label>
+                <input type="text" id="anualidad">
+            </div>
+
             <div class="interes">
-                <label for="interes">Interes (%)</label>
+                <label for="interes">Interes (% anual)</label>
                 <input type="text" id="interes">
             </div>
 
             <div class="periodo">
-                <label for="periodo">Periodo</label>
+                <label for="periodo">Periodo (anual)</label>
                 <input type="text" id="periodo">
             </div>
 
@@ -39,6 +47,23 @@
         </div>
 
         <div id="resultado">
+        </div>
+
+        <div class="info-adicional">
+            <h2>¿Qué es el Valor Futuro y Cómo Te Puede Ayudar?</h2>
+            <p>El <strong>valor futuro</strong> es un cálculo financiero que te muestra cuánto valdrá una inversión en el futuro, considerando una inversión inicial, aportes periódicos mensuales, una tasa de interés anual y un período de tiempo específico. Este cálculo es crucial para planificar tus ahorros y evaluar el crecimiento de tus inversiones a lo largo del tiempo.</p>
+            
+            <h3>¿Cómo se Calcula el Valor Futuro con Aportes Periódicos?</h3>
+            <p>La fórmula para calcular el valor futuro toma en cuenta el <strong>valor presente</strong> o inversión inicial, los <strong>aportes periódicos</strong> que se realizan cada mes, la <strong>tasa de interés anual</strong> y el <strong>tiempo</strong> durante el cual se realiza la inversión. Al utilizar nuestra calculadora, puedes ingresar estos datos para obtener una estimación precisa del valor futuro de tus inversiones, ayudándote a visualizar el impacto de tus aportes regulares y la tasa de interés en el crecimiento total de tu inversión.</p>
+            
+            <h3>¿Por Qué es Importante Conocer el Valor Futuro de tus Inversiones?</h3>
+            <p>Conocer el valor futuro de tus inversiones es fundamental para:</p>
+            <ul>
+                <li><strong>Planificación Financiera:</strong> Determina el monto total que podrías tener en el futuro, ayudándote a establecer y alcanzar metas financieras.</li>
+                <li><strong>Gestión de Ahorros:</strong> Evalúa cómo tus aportes regulares y la tasa de interés afectan el crecimiento de tus ahorros a largo plazo.</li>
+                <li><strong>Evaluación de Estrategias de Inversión:</strong> Compara diferentes estrategias y opciones de inversión para maximizar tus rendimientos.</li>
+            </ul>
+            <p>Utiliza nuestra calculadora para obtener resultados precisos y gráficos claros que te ayudarán a tomar decisiones financieras informadas y a planificar mejor tu futuro financiero.</p>
         </div>
     </div>
 

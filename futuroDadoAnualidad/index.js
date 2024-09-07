@@ -28,15 +28,15 @@ function res(vf, periodoArray, vfArray, anualidadArray){
         data: {
           labels: periodoArray,
           datasets: [{
-            label: 'Pagos fijos anuales',
+            label: 'Pago fijo',
             data: anualidadArray,
             borderWidth: 3
           },
-          {
-            label: 'Valor futuro anual',
-            data: vfArray,
-            borderWidth: 3
-          }]
+        {
+          label: 'Valor futuro',
+          data: vfArray,
+          borderWidth: 3
+        }]
         },
         options: {
           scales: {
@@ -50,53 +50,38 @@ function res(vf, periodoArray, vfArray, anualidadArray){
 
 // Obtiene el valor del form y hace la cuenta
 function calcular(){
-    const vp = document.getElementById("vp").value;
-    let anualidad = document.getElementById("anualidad").value;
-    let interes = document.getElementById("interes").value;
-    let periodo = document.getElementById("periodo").value;
+    const anualidad = document.getElementById("anualidad").value;
+    const interes = document.getElementById("interes").value;
+    const periodo = document.getElementById("periodo").value;
 
     // Si no es numero manda alerta.
-    if(isNaN(vp) || isNaN(interes) || isNaN(periodo) || isNaN(anualidad)){
+    if(isNaN(anualidad) || isNaN(interes) || isNaN(periodo)){
         alert("Ingresa valores validos");
         return;
     }
 
-    anualidad = anualidad * 12;
-
     // Obtenemos valor futuro
-     let vf = vp * (1 + (interes / 100)) ** periodo;
+    let vf = anualidad * (((1 + (interes / 100)) ** periodo - 1) / (interes / 100));
 
-    // Obtenemos valor futuro dado anualidad
-    let vfAnualidad = anualidad * (((1 + (interes / 100)) ** periodo - 1) / (interes / 100));
-
-    // vf total.
-    vf = vf + vfAnualidad;
 
     // Obtenemos el valor de futuro para cada anio para poder graficar anio con anio
-     const vfArray = [vp];
+    const vfArray = [0];
 
-     for (i = 1; i <= periodo; i++){
-        let vfAnio = vp * (1 + (interes / 100)) ** i;
-        let anualidadAnio = anualidad * (((1 + (interes / 100)) ** i - 1) / (interes / 100));
-
-        //vfArray.push(vp * (1 + (interes / 100)) ** i);
-        vfArray.push(anualidadAnio + vfAnio);
+    for (i = 1; i <= periodo; i++){
+        vfArray.push(anualidad * (((1 + (interes / 100)) ** i - 1) / (interes / 100)));
     }
 
     // Hacemos un array del periodo para graficarlo anio por anio.
     const periodoArray = [];
-
     for (i = 0; i <= periodo; i++){
         periodoArray.push(i);
     }
 
-    // Hacemos un array de la anualidad para graficarla anio con anio.
-    const anualidadArray = [];
-
-    for(i = 0; i <= periodo; i++){
+    // Hacemos un array para graficar anio con anio la anualidad constante.
+    const anualidadArray = [0];
+    for (i = 0; i <= periodo; i++){
         anualidadArray.push(anualidad);
     }
-
     
     // Hacemos formato moneda.
     vf = formatoMoneda(vf);

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora para calcular el valor presente basado en el valor futuro, la tasa de interés y el período de tiempo. Obtén resultados y gráficos fácilmente.">
+    <meta name="keywords" content="calculadora, valor presente, interés compuesto, finanzas, valor futuro">
+    <meta name="author" content="Calcula tu valor">
+    <title>Calculadora de Valor Presente - Calcula el Valor Presente de tu Inversión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="titulo">
+            <h1>Valor presente dado valor futuro</h1>
+        </div>
+
+        <div class="form">
+            <div class="info">
+                <h2>Ingrese los datos</h2>
+            </div>
+
+            <div class="vf">
+                <label for="vf">Valor futuro</label>
+                <input type="text" id="vf">
+            </div>
+
+            <div class="interes">
+                <label for="interes">Interes (%)</label>
+                <input type="text" id="interes">
+            </div>
+
+            <div class="periodo">
+                <label for="periodo">Periodo</label>
+                <input type="text" id="periodo">
+            </div>
+
+            <div class="btn">
+                <input type="button" value="Calcular" onclick="calcular()">
+            </div>
+        </div>
+
+        <div id="resultado">
+        </div>
+
+        <div class="info-adicional">
+            <h2>¿Qué es el Valor Presente y Para Qué Sirve?</h2>
+            <p>El <strong>valor presente</strong> es un concepto financiero fundamental que te permite calcular cuánto vale hoy una cantidad de dinero que se recibirá o pagará en el futuro, teniendo en cuenta una tasa de interés y un periodo de tiempo determinados. Este cálculo es esencial para evaluar el valor actual de futuras sumas de dinero y tomar decisiones financieras basadas en el valor del dinero en el tiempo.</p>
+            
+            <h3>¿Cómo se Calcula el Valor Presente?</h3>
+            <p>La fórmula del valor presente tiene en cuenta el <strong>valor futuro</strong> que se espera recibir o pagar, la <strong>tasa de interés</strong> aplicable, y el <strong>periodo</strong> en el que se realizará el pago o la recepción de dinero. Utilizando nuestra calculadora de valor presente, puedes introducir estos valores para obtener una estimación precisa del monto actual equivalente. Este cálculo te ayudará a evaluar el impacto de diferentes tasas de interés y periodos en el valor actual de tus futuros flujos de efectivo.</p>
+            
+            <h3>¿Por Qué es Importante Conocer el Valor Presente?</h3>
+            <p>Conocer el valor presente de una futura cantidad de dinero es crucial para:</p>
+            <ul>
+                <li><strong>Planificación Financiera:</strong> Ayuda a determinar cuánto deberías invertir hoy para alcanzar metas financieras futuras.</li>
+                <li><strong>Comparación de Opciones de Inversión:</strong> Permite comparar diferentes inversiones y decisiones financieras evaluando su valor actual.</li>
+                <li><strong>Evaluación de Proyectos:</strong> Es útil para evaluar la viabilidad de proyectos empresariales y personales basados en el valor actual de los ingresos futuros esperados.</li>
+            </ul>
+            <p>Nuestra calculadora de valor presente simplifica este proceso, proporcionándote resultados precisos y visualizaciones para facilitar la comprensión de tus opciones financieras. Asegúrate de usar esta herramienta para tomar decisiones financieras informadas y optimizar tus inversiones.</p>
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -52,7 +52,7 @@ body{
         color: #3498db;
     }
 
-    .vp, .interes, .periodo, .anualidad{
+    .vf, .interes, .periodo{
         display: flex;
         justify-content: space-between;
 
@@ -152,7 +152,7 @@ body{
         color: #3498db; 
     }
 
-    .vp, .interes, .periodo, .anualidad{
+    .vf, .interes, .periodo{
         display: flex;
         justify-content: space-between;
 
@@ -251,7 +251,7 @@ body{
         color: #3498db;
     }
 
-    .vp, .interes, .periodo, .anualidad{
+    .vf, .interes, .periodo{
         display: flex;
         flex-direction: column;
 

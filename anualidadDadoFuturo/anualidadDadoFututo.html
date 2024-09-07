@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora para determinar la anualidad necesaria para alcanzar un valor futuro objetivo, dado una tasa de interés y un período de tiempo. Calcula el monto de los pagos periódicos necesarios para lograr tus metas financieras.">
+    <meta name="keywords" content="calculadora anualidad, valor futuro, interés compuesto, finanzas, pagos periódicos, cálculo financiero, ahorro e inversión">
+    <meta name="author" content="Calcula tu valor">
+    <title>Calculadora de Anualidad - Calcula los Pagos Periódicos para Alcanzar un Valor Futuro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="titulo">
+            <h1>Anualidad dado un valor futuro</h1>
+        </div>
+
+        <div class="form">
+            <div class="info">
+                <h2>Ingrese los datos</h2>
+            </div>
+
+            <div class="vf">
+                <label for="vf">Valor futuro</label>
+                <input type="text" id="vf">
+            </div>
+
+            <div class="interes">
+                <label for="interes">Interes (%)</label>
+                <input type="text" id="interes">
+            </div>
+
+            <div class="periodo">
+                <label for="periodo">Periodo</label>
+                <input type="text" id="periodo">
+            </div>
+
+            <div class="btn">
+                <input type="button" value="Calcular" onclick="calcular()">
+            </div>
+        </div>
+
+        <div id="resultado">
+        </div>
+
+        <div class="info-adicional">
+            <h2>¿Qué es la Anualidad y Para Qué Sirve?</h2>
+            <p>La <strong>anualidad</strong> es una serie de pagos periódicos realizados a intervalos regulares durante un período determinado. Esta calculadora te permite determinar el monto de cada pago periódico necesario para alcanzar un <strong>valor futuro</strong> específico, dada una tasa de interés y un período de tiempo.</p>
+            
+            <h3>¿Cómo se Calcula la Anualidad?</h3>
+            <p>La fórmula para calcular la anualidad considera el <strong>valor futuro</strong> que deseas alcanzar, la <strong>tasa de interés</strong> aplicable y el <strong>número de períodos</strong> durante los cuales realizarás los pagos. Utilizando nuestra calculadora, puedes ingresar estos valores para obtener el monto de la anualidad necesario. Este cálculo te ayudará a planificar tus aportaciones periódicas para lograr tus objetivos financieros.</p>
+            
+            <h3>¿Por Qué es Importante Conocer la Anualidad?</h3>
+            <p>Conocer la anualidad necesaria es crucial para:</p>
+            <ul>
+                <li><strong>Planificación de Ahorros e Inversiones:</strong> Permite determinar cuánto deberías ahorrar o invertir periódicamente para alcanzar una meta financiera específica.</li>
+                <li><strong>Presupuestación:</strong> Ayuda a ajustar tu presupuesto para realizar pagos regulares que te permitan alcanzar tus objetivos financieros.</li>
+                <li><strong>Evaluación de Estrategias Financieras:</strong> Es útil para comparar diferentes estrategias de ahorro e inversión basadas en pagos periódicos y sus efectos en el valor futuro deseado.</li>
+            </ul>
+            <p>Nuestra calculadora de anualidad facilita este proceso, proporcionándote resultados precisos y herramientas para visualizar tus opciones financieras. Usa esta herramienta para tomar decisiones financieras informadas y optimizar tu planificación financiera.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
