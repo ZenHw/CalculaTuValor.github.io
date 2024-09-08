@@ -103,6 +103,32 @@ body{
     .info-adicional h2, h3{
         color: #3498db;
     }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #calc{
+        display: flex;
+        background-color: #fff;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 25vw;
+
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 /*Tablet*/
@@ -202,6 +228,32 @@ body{
 
     .info-adicional h2, h3{
         color: #3498db;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #calc{
+        display: flex;
+        background-color: #fff;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 25vw;
+
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -304,5 +356,31 @@ body{
 
     .info-adicional h2, h3{
         color: #3498db;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #calc{
+        display: flex;
+        background-color: #fff;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 25vw;
+
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
