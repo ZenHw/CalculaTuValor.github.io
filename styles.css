@@ -14,7 +14,7 @@ a{
 }
 
 a:hover{
-    color: #3498db;
+    color: #135186;
 }
 
 /*Responsive*/
@@ -58,7 +58,7 @@ a:hover{
         padding-top: 5%;
         padding-bottom: 5%;
         font-size: 1vw;
-        color: #3498db;
+        color: #135186;
     }
 
     .vp, .interes, .periodo, .anualidad{
@@ -108,7 +108,7 @@ a:hover{
     }
 
     .info-adicional h2, h3{
-        color: #3498db;
+        color: #135186;
     }
 
     .links{
@@ -185,7 +185,7 @@ a:hover{
         padding-top: 5%;
         padding-bottom: 5%;
         font-size: 2vw;
-        color: #3498db; 
+        color: #135186; 
     }
 
     .vp, .interes, .periodo, .anualidad{
@@ -237,7 +237,7 @@ a:hover{
     }
 
     .info-adicional h2, h3{
-        color: #3498db;
+        color: #135186;
     }
 
     .links{
@@ -310,7 +310,7 @@ a:hover{
         padding-top: 5%;
         padding-bottom: 5%;
         font-size: 3vw;
-        color: #3498db;
+        color: #135186;
     }
 
     .vp, .interes, .periodo, .anualidad{
@@ -365,7 +365,7 @@ a:hover{
     }
 
     .info-adicional h2, h3{
-        color: #3498db;
+        color: #135186;
     }
 
     .links{
